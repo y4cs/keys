@@ -2,6 +2,6 @@
   {
     "key": "VIP-2026-ABC",
     "expires": "2026-09-20",
-    "banned": true
+    "banned": false
   }
 ]
