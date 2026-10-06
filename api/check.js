@@ -9,7 +9,7 @@ export default function handler(req, res) {
     // قائمة المفاتيح: يمكنك إضافة وتعديل المفاتيح من هنا مباشرة
     const keys = [
         { key: "305", expires: "2028-12-31", banned: false },
-        { key: "dk.ensoco", expires: "2029-9-20", banned: true}
+        { key: "zanr", expires: "2029-9-20", banned: false}
     ];
 
     const foundKey = keys.find(k => k.key === key);
