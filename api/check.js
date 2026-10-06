@@ -9,7 +9,7 @@ export default function handler(req, res) {
     // قائمة المفاتيح: يمكنك إضافة وتعديل المفاتيح من هنا مباشرة
     const keys = [
         { key: "305", expires: "2028-12-31", banned: false },
-        { key: "znar", expires: "2029-9-20", banned: false}
+        { key: "znar", expires: "2029-9-20", banned: true}
     ];
 
     const foundKey = keys.find(k => k.key === key);
@@ -19,7 +19,7 @@ export default function handler(req, res) {
     }
 
     if (foundKey.banned) {
-        return res.status(200).json({ success: false, message: 'هذا المفتاح محظور (باند)!' });
+        return res.status(200).json({ success: false, message: 'تحديث !' });
     }
 
     const currentDate = new Date();
